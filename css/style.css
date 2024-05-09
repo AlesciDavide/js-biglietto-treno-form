@@ -1,7 +1,36 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.style_card_return{
+    display: flex;
+
+}
+
+.my_center{
+    margin: 0 auto;
+}
+
+.my_grandezza_card{
+    width: 33%;
+}
+
+.my_style_form{
+    border: 20px inset #5056ff;
+    background: #757575;
+    padding: 50px;
+    color: white;
+    min-width: 400px;
+}
+
+.my_scroll{
+    overflow-y: scroll;
+}
+
+.my_min_width{
+    min-width: 168.95px;
 }
 
 
+@media screen and (max-width: 540px){
+    .my_grandezza_card{
+        width: 100%;
+    }
+} 
+    
