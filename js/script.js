@@ -10,7 +10,10 @@ bottone.addEventListener('click', function(){
     numberKmUser = document.querySelector('input#userKm');
     let priceTicket = (numberKmUser.value * 0.267113);
 
-    if(numberAgeUser.value >= 63){
+    if (isNaN(numberKmUser.value) || isNaN(numberAgeUser.value) || numberKmUser.value <= 0 || numberAgeUser.value <= 0 || numberAgeUser.value > 150) {
+        alert("Attento hai inserito valori non validi");
+        
+    }else if(numberAgeUser.value >= 63){
         priceTicket = priceTicket - (priceTicket * 0.37893);
         console.log("il prezzo del tuo biglietto essendo over 63 è di:" + " " + (priceTicket.toFixed(2)));
 
