@@ -12,8 +12,8 @@ bottone.addEventListener('click', function(){
 
     let priceTicket = (numberKmUser.value * 0.267113);
 
-    if (isNaN(numberKmUser.value) || isNaN(numberAgeUser.value) || numberKmUser.value <= 0 || numberAgeUser.value <= 0 || numberAgeUser.value > 150) {
-        alert("Attento hai inserito valori non validi");
+    if( nameUserName.value.length == 0 || isNaN(numberKmUser.value) || isNaN(numberAgeUser.value) || numberKmUser.value <= 0 || numberAgeUser.value <= 0 || numberAgeUser.value > 150){
+        alert("Attenzione hai inserito uno o più valori non validi!!");
 
     }else if(numberAgeUser.value >= 63){
         priceTicket = priceTicket - (priceTicket * 0.37893);
