@@ -1,6 +1,5 @@
 .style_card_return{
     display: flex;
-
 }
 
 .my_center{
@@ -26,7 +25,6 @@
 .my_min_width{
     min-width: 168.95px;
 }
-
 
 @media screen and (max-width: 540px){
     .my_grandezza_card{
